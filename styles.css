@@ -39,3 +39,102 @@
     font-size: 14px;
     text-decoration: none;
 }
+
+
+
+.cart-table td, .cart-table th {
+    padding: 15px;
+    border-bottom: 1px solid #c2dede;
+    
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+    
+}
+
+.cart-background {
+    width: 100%;
+    background-color: #c2dede;
+    padding: 30px;
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+th, td {
+    text-align: center;
+}
+.cart-table th:nth-child(2) {
+    width: 700px;
+    
+}
+.cart-table td:nth-child(3) {
+    text-align: right;
+    
+}
+
+.btn {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
+
+}
+
+.btn:hover {
+    background-color: chocolate;
+}
+
+.btn:focus {
+    background-color: grey;
+}
+
+.btn:active {
+    background-color: brown;
+}
+
+.input-test {
+    font-size: 20px;
+}
+
+.input-test:focus {
+    border: 2px solid red;
+}
+
+.link-link {
+    text-decoration: none;
+
+}
+
+.link-link:link {
+    color: skyblue;
+}
+
+.link-link:visited {
+    color: #eee;
+}
+
+.main-btn {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bg-red {
+    background : red;
+}
+
+.bg-blue {
+    background: blue;
+}
