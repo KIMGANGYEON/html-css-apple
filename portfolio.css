@@ -163,11 +163,15 @@ img {
     border : 30px solid white;
 
 }
-
-.scale {
-    scale: 0.9;
+/* .portfolio-item1:hover {
+    scale: 1.2;
     transition: all 1s;
-}
+} */
+
+/* .scale {
+    scale: 1.2;
+    transition: all 1s;
+} */
 
 @media screen and (max-width : 768px) {
     .portfolio-item1{
