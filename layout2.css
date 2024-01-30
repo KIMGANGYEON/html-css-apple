@@ -137,3 +137,26 @@ p,h4,h3,h1,span {
     margin-right: 10px;
 }
 
+
+.custom {
+    color: green;
+}
+
+
+/* .custom { */
+    /* color: skyblue !important; */
+/* } */
+
+/* .main-background .custom {
+    color: skyblue;
+}
+
+div.main-background .custom {
+    color: red; */
+/* } */
+
+
+.pseudo::first-letter{
+    color: red;
+    font-size: 30px;
+}
