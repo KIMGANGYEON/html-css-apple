@@ -1,0 +1,17 @@
+%btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+
+.btn-green {
+    @extend %btn;
+    
+}
+$main-color : #2a4cb2;
+
+
+body {
+    background-color: var(--mains-color)
+}

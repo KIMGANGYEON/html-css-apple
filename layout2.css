@@ -160,3 +160,7 @@ div.main-background .custom {
     color: red;
     font-size: 30px;
 }
+
+input[type=file]::-webkit-file-upload-button{
+    color: red;
+}
