@@ -101,6 +101,127 @@ div {
     @include aaa(33.33%)
 }
 
-.ani-text {
-    transform: rotate(30deg);
+.ani-ani {
+    text-align: center;
+}
+
+.ani-ani:hover{
+    animation-name: run;
+    animation-duration: 1.5s;
+}
+
+@keyframes run {
+    0%{
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    75% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.bush {
+    text-align: center;
+}
+
+.bush:hover {
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-8deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+    75% {
+        transform: rotate(-8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.xx {
+    text-align: center;
+    font-size: 70px;
+
+}
+
+.xx:hover {
+    animation-name: run2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes run2 {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-1056deg);}
+    100% {transform: rotate(45deg) scale(1.5);}
+}
+
+
+
+.ani-navbar:hover{
+    transform: translateX(0px);
+    h4 {
+        transform: translateX(-70px);
+    }
+   
+    p {
+        transform: translateX(0px);
+        transition: all 1s;
+        
+    }
+    p {
+        transform: translateX(0px);
+        transition: all 1s;
+    }
+}
+
+.ani-navbar {
+    
+    width: 200px;
+    background: black;
+    color: white;
+    height: 100%;
+    padding: 25px;
+    position: fixed;
+    z-index: 5;
+    text-align: right;
+    transition: all 1s;
+    transform: translateX(-150px);
+    h4 {
+        transform: translateX(0px);
+        transition: all 1s;
+    }
+  
+    
+    p {
+        color: yellow;
+        transform: translateX(-200px);
+        transition: all 1s;
+     
+        }
+   
+        
+    }
+
+@keyframes slide {
+    0%{transform: translateX(-50px)}
+    50%{transform: translateX(270px) skew(-30deg)}
+    100%{transform: translateX(240px)}
+
 }
