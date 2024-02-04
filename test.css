@@ -1,9 +1,52 @@
-.btn-green {
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+body {
+  height: 1000vh;
 }
 
-body {
-  background-color: var(--mains-color);
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.sh-list .active {
+  background: skyblue;
+  color: white;
+}
+
+.alert-box-green, .alert-box-blue, .alert-box-yellow {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  background: green;
+  color: white;
+}
+
+.alert-box-yellow {
+  background: orange;
+}
+
+.alert-box-blue {
+  background: skyblue;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.row .col-6 {
+  text-align: center;
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.row .col-4 {
+  text-align: center;
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.ani-text {
+  transform: rotate(30deg);
 }/*# sourceMappingURL=test.css.map */

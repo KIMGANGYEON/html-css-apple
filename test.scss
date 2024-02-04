@@ -1,17 +1,106 @@
-%btn {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
-}
-
-
-.btn-green {
-    @extend %btn;
-    
-}
-$main-color : #2a4cb2;
-
-
 body {
-    background-color: var(--mains-color)
+    height: 1000vh;
+}
+
+// @use 'reset';
+
+
+
+// // %btn {
+// //     width: 100px;
+// //     height: 100px;
+// //     padding: 20px;
+// // }
+
+
+// // .btn-green {
+// //     @extend %btn;
+    
+// // }
+// // $main-color : #2a4cb2;
+
+
+// // body {
+// //     background-color: var(--mains-color)
+// // }
+
+// @mixin abc($a){
+//     font-size: $a;
+//     letter-spacing: -1px;
+// }
+
+
+
+// h2 {
+//     @include abc(20)
+// }
+// h3 {
+//     font-size: 20px;
+//     letter-spacing: -1px;
+// }
+// h4 {
+//     font-size: 10px;
+//     letter-spacing: -1px;
+// }
+
+
+.sh-list {
+    li{
+        list-style: none;
+        padding: 15px;
+        border: 1px solid #eee;
+    }
+    .active {
+        background: skyblue;
+        color: white;
+    }
+}
+
+// %div {
+//     padding: 10px;
+//     border-radius: 5px;
+//     border: 1px solid #eee;
+//     background: green;
+//     color: white;
+// }
+
+.alert-box-green {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background: green;
+    color: white;
+}
+
+.alert-box-yellow {
+    @extend .alert-box-green;
+    background: orange;
+}
+.alert-box-blue {
+    @extend .alert-box-green;
+    background: skyblue;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+@mixin aaa($z){
+    text-align: center;
+    float: left;
+    width: $z;
+    padding: 15px;
+}
+
+
+.row .col-6 {
+    @include aaa(50%)
+}
+.row .col-4 {
+    @include aaa(33.33%)
+}
+
+.ani-text {
+    transform: rotate(30deg);
 }
